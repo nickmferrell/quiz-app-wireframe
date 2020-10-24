@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz App</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="app.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <header>
+    <h1>Guitar Quiz</h1>
+  </header>
+  <main>
+    <section>
+      <form>
+        <p>Please click the 'Begin Quiz' button to start the quiz.</p>
+        <button type="button" id="startquiz">Begin Quiz</button>
+      </form>
+    </section>
+
+    <h4><em>Correct: 0/5 (0%)</em></h2>
+
+    <section id="question-number">
+      <div id="question">
+        <form>
+          <h3>1.) When was the Fender Stratocaster invented?</h3>
+          <input type="radio" name="question1" value="a" id="q1a" /> 1947<br />
+          <input type="radio" name="question1"
+          value="b" id="q1b" /> 1954<br />
+          <input type="radio" name="question1" value="c" id="q1c" /> 1956<br />
+          <input type="radio" name="question1" value="d" id="q1d" /> 1949<br />
+        </form>
+        <!-- if correct -->
+      <h4><em>And the crowd goes wild! You got it right!</em></h4>
+        <!-- if incorrect -->
+      <h4><em>Whoa whoa nope! That was way out of tune!</em></h4>
+
+        <form>
+          <h3>2.) When was the Gibson Les Paul invented?</h3>
+          <input type="radio" name="question2" value="a" id="q2a" /> 1941<br />
+          <input type="radio" name="question2" value="b" id="q2b" /> 1943<br />
+          <input type="radio" name="question2" value="c" id="q2c" /> 1949<br />
+          <input type="radio" name="question2" id="q2d" /> 1952<br />
+        </form>
+        <form>
+          <h3>3.) In 2015, who did Rolling Stone rank as the Greatest Guitarist of all time?</h3>
+          <input type="radio" name="question3" value="a" id="q3a" /> Eric Clapton<br />
+          <input type="radio" name="question3" value="b" id="q3b" /> Jimi Hendrix<br />
+          <input type="radio" name="question3" value="c" id="q3c" /> Stevie Ray Vaughan<br />
+          <input type="radio" name="question3" value="d" id="q3d" /> Jimmy Page<br />
+        </form>
+        <form>
+          <h3>4.) What is the most expensive guitar ever sold?</h3>
+          <input type="radio" name="question4" value="a" id="q4a" /> Eric Clapton's "Blackie" Fender Stratocaster<br />
+          <input type="radio" name="question4" value="b" id="q4b" /> Stevie Ray Vaughan's "Number One" Fender Stratocaster<br />
+          <input type="radio" name="question4" value="c" id="q4c" /> Jimi Hendrix's 1968 Fender Stratocaster<br />
+          <input type="radio" name="question4" value="d" id="q4d" /> David Gilmour's "Black Strat" Fender Stratocaster<br />
+        </form>
+        <form>
+          <h3>5.) In 2009, what did Guitar World magazine rank as the Greatest Guitar Solo of all time?</h3>
+          <input type="radio" name="question5" value="a" id="q5a" /> Lynyrd Skynyrd's "Freebird"<br />
+          <input type="radio" name="question5" value="b" id="q5b" /> Van Halen's "Eruption"<br />
+          <input type="radio" name="question5" value="c" id="q5c" /> Pink Floyd's "Comfortably Numb"<br />
+          <input type="radio" name="question5" value="d" id="q5d" /> Led Zeppelin's "Stairway to Heaven"<br />
+        </form>
+
+      <h2>No encores tonight, that's all folks!</h2>
+      <h3>You got num/5 right.</h3>
+
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
